@@ -5,6 +5,7 @@ function fibonacci(num) {
 	{
 		sum=sum+i;
 	}
+	return sum;
 }
 
 module.exports = fibonacci;
