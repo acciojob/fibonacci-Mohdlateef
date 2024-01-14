@@ -1,9 +1,16 @@
 function fibonacci(num) {
 // your code here
-	int sum=0
-	for(int i=0;i<num;i++)
+	int prev=0
+	let next=1;
+	let sum=0;
+	
+	for(int i=1;i<num;i++)
 	{
-		sum=sum+i;
+		sum=next+prev;
+		prev=next;
+		next=sum;
+
+		
 	}
 	return sum;
 }
