@@ -3,8 +3,11 @@ function fibonacci(num) {
 	let prev=0
 	let next=1;
 	let sum=0;
-	
-	for(let i=1;i<num;i++)
+	if(num==2)
+	{
+		return 1;
+	}
+	for(let i=2;i<num;i++)
 	{
 		sum=next+prev;
 		prev=next;
